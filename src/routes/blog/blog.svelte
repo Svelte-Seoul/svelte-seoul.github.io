@@ -6,7 +6,7 @@
     const { html, frontmatter : { title, summary, toc }, tocTree } = data;
 
     console.log(tocTree);
-    
+
     const { permalink } = request;
 
     const { origin } = settings;
@@ -20,7 +20,9 @@
 
 <article>
     <h1>{title}</h1>
-    <TableOfContent {tocTree}/>
+    {#if toc}
+        <TableOfContent {tocTree}/>
+    {/if}
     {#if html}
         {@html html}
     {:else}

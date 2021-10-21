@@ -4,6 +4,7 @@ summary: '누구나 Pull Request로 글을 쓸 수 있고, 블로그 자체를 �
 date: '2021-10-21'
 author: 이유종
 tag: '공지'
+toc: true
 ---
 
 # 저장소 Fork 하기

@@ -21,3 +21,7 @@ main a {
 main a:hover {
     font-weight: bold;
 }
+
+article h1 {
+    color:#ff3e00;
+}

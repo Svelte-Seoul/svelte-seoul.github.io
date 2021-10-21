@@ -3,14 +3,28 @@
 
     export let data, request, settings;
     
-    const { html, frontmatter : { title, summary, toc }, tocTree } = data;
+    const { html, frontmatter : { title, summary, toc, author }, tocTree } = data;
 
-    console.log(tocTree);
-
+    const [name, profile] = author.split(/[()]/);
+    
     const { permalink } = request;
-
+    
     const { origin } = settings;
+    
 </script>
+
+<style>
+    span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    a {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+</style>
 
 <svelte:head>
     <title>{title}</title>
@@ -19,7 +33,12 @@
 </svelte:head>
 
 <article>
-    <h1>{title}</h1>
+    <section>
+        <span>
+            <h1>{title}</h1>
+            <a href={profile}>{`by ${name}`}</a>
+        </span>
+    </section>
     {#if toc}
         <TableOfContent {tocTree}/>
     {/if}

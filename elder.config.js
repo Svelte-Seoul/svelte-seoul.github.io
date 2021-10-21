@@ -25,6 +25,10 @@ module.exports = {
   plugins: {
     '@elderjs/plugin-markdown': {
       routes: ['blog'],
+      useSyntaxHighlighting: {
+        theme: 'github-light',
+      },
+      useTableOfContents: true,
     },
     '@elderjs/plugin-browser-reload': {
       // this reloads your browser when nodemon restarts your server.

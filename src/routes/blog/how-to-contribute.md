@@ -1,6 +1,6 @@
 ---
 title: 'Svelte Seoul 블로그에 기여하기'
-summary: '누구나 Pull Request로 글을 쓸 수 있고, 블로그 자체를 수정할 수도 있습니다.'
+summary: '누구나 Pull Request로 글을 쓸 수 있고, 블로그 자체를 수정할 수도 있다.'
 date: '2021-10-21T00:04:35.533674'
 author: 이유종
 tag: '공지'

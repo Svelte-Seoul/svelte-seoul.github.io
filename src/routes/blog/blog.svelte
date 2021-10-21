@@ -1,11 +1,15 @@
 <script>
+    import TableOfContent from '../../components/TableOfContent.svelte'
+
     export let data, request, settings;
     
-     const { html, frontmatter : { title, summary }, tocTree } = data;
+    const { html, frontmatter : { title, summary, toc }, tocTree } = data;
 
-     const { permalink } = request;
+    console.log(tocTree);
+    
+    const { permalink } = request;
 
-     const { origin } = settings;
+    const { origin } = settings;
 </script>
 
 <svelte:head>
@@ -16,6 +20,7 @@
 
 <article>
     <h1>{title}</h1>
+    <TableOfContent {tocTree}/>
     {#if html}
         {@html html}
     {:else}

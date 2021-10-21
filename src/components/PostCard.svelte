@@ -4,14 +4,18 @@
 
 <style>
     a {
-        padding: 4px;
-        font-size: 12px;
-        text-decoration: none;
-        color:black;
+        font-size: 10px;
+        margin: 10px;
     }
 
-    a:hover {
-        color:#ff3e00;
+    span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    h2 + span {
+        margin-left: 10px;
     }
 </style>
   
@@ -20,12 +24,13 @@
         <p>아직 글이 없습니다.</p>
     {/if}
     
-    {#each posts as {slug, frontmatter: {title, summary}} (title)}
-        <a href={`/${slug}/`}>
-            <div class="card">
-                <h2>{title}</h2>
-                <h3>{summary}</h3>
-            </div>
+    {#each posts as {slug, frontmatter: {title, summary, date}} (title)}
+        <a class="card" href={`/${slug}/`}>
+            <span>
+                <h2>{title}</h2> 
+                <span>{date}</span>
+            </span>
+            <h3>{summary}</h3>
         </a>
     {/each}
 </section>

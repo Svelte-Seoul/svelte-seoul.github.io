@@ -4,3 +4,20 @@
     border-radius: 2rem;
     margin-bottom: 1rem;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #ff3e00;
+}
+
+main a {
+    color:#ff3e00;
+}
+
+main a:hover {
+    font-weight: bold;
+}

@@ -10,12 +10,6 @@
   a {
     padding: 4px;
     font-size: 12px;
-    text-decoration: none;
-    color:#ff3e00;
-  }
-
-  a:hover {
-    font-weight: bold;
   }
 </style>
 

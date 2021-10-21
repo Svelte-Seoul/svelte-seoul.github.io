@@ -7,7 +7,7 @@
     <span>목차</span>
     <ol>
       {#each tocTree as {id, text, children: tocTree}}
-        <li style>
+        <li>
           <a href={`#${id}`}>
             {text}
           </a>

@@ -10,6 +10,7 @@
   a {
     padding: 4px;
     font-size: 12px;
+    font-weight: bold;
   }
 </style>
 

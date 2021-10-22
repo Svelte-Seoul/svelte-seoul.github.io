@@ -6,7 +6,7 @@ author: 이유종(https://github.com/yujong-lee)
 tag: '공지'
 toc: true
 ---
-처음에는 어려울 수 있지만 익숙해지면 간단합니다. 어려움이 있으시면 `Slack`에 오셔서 편하게 말씀해주세요.
+처음에는 어려울 수 있지만 익숙해지면 간단합니다. 어려움이 있으시면 [Slack](https://join.slack.com/t/svelteseoul/shared_invite/zt-xf8buzpe-xZnJcIWJFHj9fueYZojPNw)에 오셔서 편하게 말씀해주세요.
 
 ## 작업 환경 준비하기
 
@@ -44,7 +44,7 @@ yarn start
 
 기본적인 가이드라인은 작업물과 build의 결과를 나누는 것입니다. 즉, `src` 폴더에 가해진 변화와 `docs`폴더에 가해진 변화를 `commit`에서 구분하는 것입니다.
 
-커밋 메시지에 자신의 작업에 대한 `What`과 `Why, How`를 잘 드러내주시면 가장 좋지만, 어려우시면 `Pull Request`의 본문에 잘 정리해주셔도 괜찮습니다. `Pull Request`의 단위는 최대한 작게 유지해주시면 좋습니다.
+커밋 메시지에 간결한 설명을 담아주시는게 가장 좋지만(`What`보다는 `Why`가 더 중요합니다), 어려우시면 `Pull Request`의 본문에 잘 정리해주셔도 괜찮습니다. `Pull Request`의 단위는 최대한 작게 유지해주시면 좋습니다.
 
 ## Pull Request 보내기
 

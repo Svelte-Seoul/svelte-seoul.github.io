@@ -6,7 +6,8 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-position: under;
     color: black;
 }
 
@@ -14,15 +15,7 @@ a:hover {
     color: #ff3e00;
 }
 
-main a {
-    color: #ff3e00;
-}
-
-main a:hover {
-    font-weight: bold;
-}
-
-article h1 {
+h1 {
     color: #ff3e00;
 }
 
@@ -30,4 +23,8 @@ code {
     color: #A22700;
     // https://meyerweb.com/eric/tools/color-blend
     // #ff3e00 + #000000 / Midpoints 10 / 5th
+}
+
+a, p, h1, h2, h3, h4, h5, h6 {
+    line-height: 150%;
 }

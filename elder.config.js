@@ -26,7 +26,7 @@ module.exports = {
     '@elderjs/plugin-markdown': {
       routes: ['blog'],
       useSyntaxHighlighting: {
-        theme: 'github-light',
+        theme: 'material-lighter',
       },
       useTableOfContents: true,
     },

@@ -10,6 +10,8 @@
     const { permalink } = request;
     
     const { origin } = settings;
+
+    console.log(permalink)
     
 </script>
 
@@ -29,7 +31,19 @@
 <svelte:head>
     <title>{title}</title>
     <meta name="description" content={summary} />
-    <link href={`${origin}/${permalink}`} rel="canonical" />
+    <link href={`${origin}${permalink}`} rel="canonical" />
+
+    <meta property="og:site_name" content="Svelte Seoul | 스벨트 서울">
+    <meta property="og:url" content={`${origin}${permalink}`}>
+    <meta property="og:title" content={title}>
+    <!-- <meta property="og:image" content=""> -->
+    <meta property="og:description" content={summary}>
+  
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content={`${origin}${permalink}`}>
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={summary}>
+    <!-- <meta name="twitter:image" content=""> -->
 </svelte:head>
 
 <article>

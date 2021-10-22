@@ -16,7 +16,6 @@
 
 <svelte:head>
   <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css">
-  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css">
 </svelte:head>
 
 <div class="container">

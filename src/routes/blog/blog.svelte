@@ -10,9 +10,6 @@
     const { permalink } = request;
     
     const { origin } = settings;
-
-    console.log(permalink)
-    
 </script>
 
 <style>
